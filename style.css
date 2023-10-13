@@ -1,23 +1,86 @@
-.grid-container {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: darkslategrey;
+    background-color: blanchedalmond;
+}
+
+.header{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 40px 0px 20px 0px;
+}
+
+button {
+    background-color: chocolate;
+    font-weight: bold;
+}
+
+.operations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.operations > * {
+    
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 30px; 
+}
+
+.operations > label {
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+.ticket-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
-
-.grid-item {
-    background-color: salmon;
-    color: white;   
+    
+.ticket {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0px 0px 30px;
     padding: 10px;
+    background-color: coral;
+    color: darkslategray;
+    font-weight: bold;
 }
 
-.delete-btn {
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    display: inline-block;
+.ticket > p {
+    background-color: coral;
 }
 
-.delete-btn:hover {
-    color: lightsalmon;
-    cursor: pointer;
+.ticket > div {
+    background-color: coral;
+}
+.ticket > label::before { 
+    background-color: coral;
+}
+.ticket > input {
+    background-color: coral;
+}
+
+.ticket > .done {
+    background-color: greenyellow;
+    align-self: flex-end;
 }

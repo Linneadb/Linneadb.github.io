@@ -3,35 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TO DO</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-item">
-        <h2 class="delete-btn">X</h2>
-        <h2 class="title-text">Title 1</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Exercitationem provident unde rem, praesentium fuga illum.
-        </p>
+    <div class="header">
+      <h1>TO DO</h1>
+      <p>This is all the important stuff you need to get done.</p>
+      <br />
+      <ol>
+        <li>To add stuff, use the write-box and add-button</li>
+        <li>To mark something as done: *TODO</li>
+        <li>To remove a todo-item: *TODO</li>
+      </ol>
+    </div>
+    <div class="operations">
+      <label id="textLabel" for="text">What needs to be done:</label><br />
+      <input type="text" id="text" />
+      <button id="add-btn">Add ticket</button>
+    </div>
+    <div class="ticket-container">
+      <div class="ticket" id="1">
+        <p>This is a test ticket</p>
+        <div>
+          <input type="checkbox" id="done" />
+          <label id="label" for="done">Done!</label><br />
+        </div>
       </div>
-      <div class="grid-item">
-        <h2 class="delete-btn">X</h2>
-        <h2 class="title-text">Title 2</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Exercitationem provident unde rem, praesentium fuga illum.
-        </p>
+      <div class="ticket">Steg 1: Skapa en HTML-struktur</div>
+      <div class="ticket">Steg 2: Skriv CSS-kod</div>
+      <div class="ticket">
+        Steg 3: Skapa en funktion för att lägga till uppgifter
       </div>
-      <div class="grid-item">
-        <h2 class="delete-btn">X</h2>
-        <h2 class="title-text">Title 3</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Exercitationem provident unde rem, praesentium fuga illum.
-        </p>
-      </div>
+      <div class="ticket">Steg 4: Koppla funktionen till knappen</div>
+      <div class="ticket">Steg 5: Hantera uppgifter</div>
+      <div class="ticket">Steg 6: Styla slutförda uppgifter</div>
     </div>
     <script src="main.js"></script>
   </body>
